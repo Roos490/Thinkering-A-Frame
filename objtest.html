@@ -6,12 +6,11 @@
 	<title></title>
 	 <meta name="viewport" content="width=device-width">
 	 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 </head>
 <body>
 	<a-scene>
 		<a-assets>
-			<img id="skyTexture"
-     		 src="_img/sky2.jpg">
 			<a-asset-item id="tree-obj" src="tree-obj/tree.obj"> </a-asset-item>
 			<a-asset-item id="tree-mtl" src="tree-obj/tree.mtl"> </a-asset-item>
 		</a-assets>
@@ -21,7 +20,7 @@
 
 		<a-plane  src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10" color="green"></a-plane>
 
-		<a-sky src="#skyTexture"></a-sky>
+		<a-entity environment="preset: starry; dressingAmount: 500"></a-entity>
 	</a-scene>
 
 
