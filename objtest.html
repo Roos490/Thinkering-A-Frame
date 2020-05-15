@@ -19,6 +19,8 @@
 
 			<a-asset-item id="radio-obj" src="radio-obj/radio.obj"> </a-asset-item>
 			<a-asset-item id="radio-mtl" src="radio-obj/radio.mtl"> </a-asset-item>
+
+			 <a-asset-item id="swamp" src="swamp_location/scene.gltf"></a-asset-item>
 		</a-assets>
 
 		<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" height="5"></a-entity>
@@ -30,6 +32,7 @@
                    dur: 20;  
                    loop: true"
 		></a-entity>
+		<a-entity gltf-model="#swamp"></a-entity>
 
 		<a-entity obj-model="obj: #radio-obj; mtl: #radio-mtl" position="-6 0 0"></a-entity>
 <!-- 
