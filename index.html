@@ -19,6 +19,8 @@
 			 <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
 			 <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay
      		 preload></audio>
+     		 <a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>
+    		<a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>
   		</a-assets>
 		</a-assets>
 
@@ -31,6 +33,7 @@
 
 		<a-plane  src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
 
+		 <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
 		<!-- Out of the box environment! -->
   
   		<a-sky src="#skyTexture"></a-sky>
