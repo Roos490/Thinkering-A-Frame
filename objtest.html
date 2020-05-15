@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<title></title>
+	 <meta name="viewport" content="width=device-width">
+	 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+		<a-assets>
+			<a-asset-item id="tree-obj" src="tree-obj/tree.mtl"> </a-asset-item>
+			<a-asset-item id="tree-mtl" src="/path/to/tree.obj"> </a-asset-item>
+		</a-assets>
+
+		<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+
+	</a-scene>
+
+</body>
+</html>
