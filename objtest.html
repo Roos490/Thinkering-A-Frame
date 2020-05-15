@@ -24,7 +24,12 @@
 		<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" height="5"></a-entity>
 		<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" height="5"position="3 0 0"></a-entity>
 
-		<a-entity obj-model="obj: #dog-obj; mtl: #dog-mtl" position="-3 0 0"></a-entity>
+		<a-entity obj-model="obj: #dog-obj; mtl: #dog-mtl" position="-3 0 0"
+		animation="easing: easeInOut;
+                  property: rotation; 
+                   dur: 20;  
+                   loop: true"
+		></a-entity>
 
 		<a-entity obj-model="obj: #radio-obj; mtl: #radio-mtl" position="-6 0 0"></a-entity>
 <!-- 
