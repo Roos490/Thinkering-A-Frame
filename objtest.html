@@ -6,7 +6,7 @@
 	<title></title>
 	 <meta name="viewport" content="width=device-width">
 	 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+	<!--   <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> -->
 </head>
 <body>
 	<a-scene>
@@ -40,18 +40,18 @@
                    dur: 20;  
                    loop: true"
 		></a-entity>
-	<!-- 	<a-entity gltf-model="#swamp" scale="0.5 0.5 0.5"></a-entity> -->
+		<a-entity gltf-model="#swamp" scale="0.5 0.5 0.5"></a-entity>
 		<a-entity gltf-model="#ocean"  scale="50 50 50"></a-entity>
-		<a-entity gltf-model="#victiorian"  scale="1 1 1" position="0 5 0"></a-entity>
+		<a-entity gltf-model="#victiorian"  scale="1 1 1"></a-entity>
 		<a-entity gltf-model="#grass"  scale="1 1 1"></a-entity>
 
 		<a-entity gltf-model="#house"  scale="1 1 1"></a-entity>
 
 		<a-entity obj-model="obj: #radio-obj; mtl: #radio-mtl" position="-6 0 0"></a-entity>
-<!-- 
-		<a-plane  src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane> -->
 
-		<a-entity environment="preset: japan; dressingAmount: 10"></a-entity>
+		<a-plane  src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+<!-- 
+		<a-entity environment="preset: japan; dressingAmount: 10"></a-entity> -->
 	</a-scene>
 
 
